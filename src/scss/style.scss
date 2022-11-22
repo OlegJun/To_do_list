@@ -1,0 +1,32 @@
+@import "null.style.css";
+
+@import '_variables';
+
+@import "Components/allComponents";
+
+@import "header/allHeaderComponents";
+
+@import "TaskCreate/createToDo.css";
+
+@import "TaskItem/taskItemComponents";
+
+@import "Calendar/calendar";
+
+.wrapper {
+  width: 100vw;
+  min-height: 100vh;
+  background: linear-gradient(225deg, rgb(33, 28, 35) 17%, rgb(161, 105, 78) 100%);
+}
+
+.main {
+  width: 100%;
+  height: 100%;
+  padding: 0 50px 0 50px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+}
+
+
+

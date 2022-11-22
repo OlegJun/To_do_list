@@ -1,0 +1,64 @@
+.task__item {
+  max-height: 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 1.1rem;
+  width: 100%;
+  background-color: rgb(33,28,35);
+  margin: 0;
+  padding: 0;
+  border-radius: $borderRadiusBlock;
+  transition: all 0.5s;
+  opacity: 0;
+}
+
+
+.task__body {
+  max-height: 100%;
+  width: 70%;
+}
+
+.task__btn {
+  flex-basis: 20%;
+}
+
+.task__item-title {
+  font-size: 0;
+  color: $colorBeige;
+  word-wrap: break-word;
+}
+
+.task__item-description {
+  font-size: 0;
+  width: 100%;
+  margin: 2.5px 0 0 0;
+  line-height: $lineHeightDescription;
+  color: aliceblue;
+  word-wrap: break-word;
+}
+
+.task__btn {
+  max-height: 100%;
+}
+
+.button__delete-task {
+  height: 0;
+  font-size: 0;
+  width: 100%;
+  margin: 0 10px 0 0;
+  background-color: $colorBrownFromDesign-Ironstone;
+  color: black;
+  border: none;
+  box-shadow: none;
+  z-index: 2;
+}
+
+.button__change-task {
+  height: 0;
+  font-size: 0;
+  width: 100%;
+  color: black;
+  margin: 5px 0 0 0;
+  border: none;
+  box-shadow: none;
+}

@@ -1,0 +1,39 @@
+.calendar__contain {
+  width: 100%;
+}
+.calendar__contain th {
+  font-size: 14px;
+  min-width: 35px;
+  width: 35px;
+  height: 35px;
+}
+
+.calendar__body td {
+  width: 35px;
+  height: 35px;
+  text-align: center;
+  font-family: Arial;
+  vertical-align: center;
+  border: 1px solid black;
+  cursor: pointer;
+  background-color: gray;
+  box-sizing: border-box;
+  user-select: none;
+}
+.calendar__body td.now {
+  background-color: #ff2e2e;
+}
+.calendar__body td.selected {
+  background-color: rgb(37, 62, 138);
+}
+.calendar__body td.disable {
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: default;
+}
+.calendar__body td.none {
+  opacity: 0;
+  border: none;
+  cursor: default;
+}
+
+/*# sourceMappingURL=cellsCalendar.css.map */

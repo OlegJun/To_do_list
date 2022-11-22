@@ -1,0 +1,8 @@
+.task__item.overdue {
+  position: relative;
+}
+.task__item.overdue:before {
+  position: absolute;
+}
+
+/*# sourceMappingURL=taskItemOverdue.css.map */

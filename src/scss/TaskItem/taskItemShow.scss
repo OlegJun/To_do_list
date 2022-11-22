@@ -1,0 +1,30 @@
+.task__item.show {
+  max-height: 100%;
+  opacity: 1;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid $colorBrownFromDesign-Cowboy;
+  box-shadow: 0 0 5px 1px $colorBeige;
+  .task__item-title {
+    font-size: 1.3rem;
+  }
+  .title__date {
+    margin: 5px 0 0 0;
+    .warning {
+      margin: 5px 0 0 0;
+      color: #fd9a9a;
+      z-index: 2;
+    }
+  }
+  .task__item-description {
+    font-size: 1.1rem;
+  }
+  .button__delete-task {
+    height: 30px;
+    font-size: 1.1rem;
+  }
+  .button__change-task {
+    height: 30px;
+    font-size: 1.1rem;
+  }
+}

@@ -1,0 +1,26 @@
+@media (max-width: 767.98px) {
+  .calendar__body td {
+    width: 30px;
+    height: 30px;
+  }
+  .calendar__contain th {
+    font-size: 12px;
+    min-width: 30px;
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (max-width: 374.98px) {
+  .calendar__body td {
+    width: 25px;
+    height: 25px;
+  }
+  .calendar__contain th {
+    font-size: 12px;
+    min-width: 25px;
+    width: 25px;
+    height: 25px;
+  }
+}
+
+/*# sourceMappingURL=adaptabilityBlock.css.map */

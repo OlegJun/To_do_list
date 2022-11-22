@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <title>ToDoList</title>
+    <link href="src/scss/style.min.css" rel="stylesheet">
+    <link rel="shortcut icon" href="assets/img/title.webp" type="image/x-icon">
+</head>
+<body>
+<div class="wrapper">
+    <header class="header">
+        <div class="post__management-buttons">
+            <div class="create__task plus">
+                <span class="vertical__line"></span>
+                <span class="horizontal__line"></span>
+            </div>
+            <div class="deleteAll__todo-button plus">
+                <img src="assets/svg/dustbin_120823.svg" class="img__dustbin">
+            </div>
+        </div>
+    </header>
+    <main class="main">
+        <div class="tasks__list">
+        </div>
+    </main>
+    <div class="popup__window-remove popup">
+        <div class="popup__block-remove popup__block">
+            <div class="popup__title">
+                Вы уверены, что хотите <strong>удалить все посты</strong>?
+            </div>
+            <div class="popup__buttons">
+                <button class="button__confirmation-yes button" id="yesDelete">Да</button>
+                <button class="button__confirmation-no button">Нет</button>
+            </div>
+        </div>
+    </div>
+    <div class="popup__window-change popup">
+        <div class="popup__block popup__block-change">
+            <div class="popup__title">
+                Make changes:
+            </div>
+            <div class="message__error-change message__error">
+                To edit a post, you need to fill in the title!
+            </div>
+            <input class="change__todo-title input" placeholder="Title"
+                   type="text"
+                   id="input-textareaChange-title">
+            <textarea class="change__todo-description textarea"
+                      placeholder="Task description (optional)"
+                      id="input-textareaChange-description"></textarea>
+            <div class="popup__buttons">
+                <button class="button__confirmation-change button" id="yes">
+                    Yes
+                </button>
+                <button class="button__rebut-change button">
+                    No
+                </button>
+            </div>
+        </div>
+    </div>
+    <div class="popup__window-create popup">
+        <form class="create__todo">
+            <div class="close__popupCreate close-popup">
+                <span class="vertical__line closedFirst"></span>
+                <span class="horizontal__line closedSecond"></span>
+            </div>
+            <div class="create__todo-body">
+                <div class="input__container">
+                    <div class="message__error-create message__error">
+                        To create a post, you must fill in the title field!
+                    </div>
+                    <input class="create__todo-title input" placeholder="Title"
+                           type="text"
+                           id="input-title"
+                           maxlength="200"
+                    >
+                    <textarea class="create__todo-description textarea"
+                              placeholder="Description"
+                              id="input-description"></textarea>
+                    <input class="create__todo-date input" readonly
+                           type="text"
+                           id="input-date">
+                    <div class="create__date-validation">
+                        <div class="checkboxblock container" id="checkcross">
+                            <input type="checkbox" class="checkbox-createTask checkbox"/>
+                            <div class="knobs"></div>
+                            <div class="layer"></div>
+                        </div>
+                        <p class="validationText">Add a due date for a task</p>
+                    </div>
+                </div>
+                <button class="create__todo-button plus">
+                    <span class="vertical__line"></span>
+                    <span class="horizontal__line"></span>
+                </button>
+
+            </div>
+            <div class="popup__calendar">
+                <div class="popup__calendar-container">
+                    <div class="calendar__month-year">
+                        Oct 2022
+                    </div>
+                    <table class="calendar__contain">
+                        <thead>
+                        <tr>
+                            <th class="mon">Mon</th>
+                            <th class="tue">Tue</th>
+                            <th class="wed">Wed</th>
+                            <th class="thu">Thu</th>
+                            <th class="fri">Fri</th>
+                            <th class="sat">Sat</th>
+                            <th class="sun">Sun</th>
+                        </tr>
+                        </thead>
+                        <tbody class="calendar__body">
+                        <tr>
+                            <td class="mon"></td>
+                            <td class="tue"></td>
+                            <td class="wed"></td>
+                            <td class="thu"></td>
+                            <td class="fri"></td>
+                            <td class="sat"></td>
+                            <td class="sun"></td>
+                        </tr>
+                        <tr>
+                            <td class="mon"></td>
+                            <td class="tue"></td>
+                            <td class="wed"></td>
+                            <td class="thu"></td>
+                            <td class="fri"></td>
+                            <td class="sat"></td>
+                            <td class="sun"></td>
+                        </tr>
+                        <tr>
+                            <td class="mon"></td>
+                            <td class="tue"></td>
+                            <td class="wed"></td>
+                            <td class="thu"></td>
+                            <td class="fri"></td>
+                            <td class="sat"></td>
+                            <td class="sun"></td>
+                        </tr>
+                        <tr>
+                            <td class="mon"></td>
+                            <td class="tue"></td>
+                            <td class="wed"></td>
+                            <td class="thu"></td>
+                            <td class="fri"></td>
+                            <td class="sat"></td>
+                            <td class="sun"></td>
+                        </tr>
+                        <tr>
+                            <td class="mon"></td>
+                            <td class="tue"></td>
+                            <td class="wed"></td>
+                            <td class="thu"></td>
+                            <td class="fri"></td>
+                            <td class="sat"></td>
+                            <td class="sun"></td>
+                        </tr>
+                        <tr>
+                            <td class="mon"></td>
+                            <td class="tue"></td>
+                        </tr>
+                        </tbody>
+                    </table>
+                    <div class="calendar__control-buttons">
+                        <button class="calendar__previous  button">Previous</button>
+                        <button class="calendar__next  button">Next</button>
+                    </div>
+                    <div class="calendar__select">
+                        <select class="calendar__select-mouth select">
+                            <option value=0>Jan</option>
+                            <option value=1>Feb</option>
+                            <option value=2>Mar</option>
+                            <option value=3>Apr</option>
+                            <option value=4>May</option>
+                            <option value=5>Jun</option>
+                            <option value=6>Jul</option>
+                            <option value=7>Aug</option>
+                            <option value=8>Sep</option>
+                            <option value=9>Oct</option>
+                            <option value=10>Nov</option>
+                            <option value=11>Dec</option>
+                        </select>
+                        <select class="calendar__select-year select">
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                            <option></option>
+                        </select>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script type="module" src="src/js/script.js"></script>
+</body>
+</html>

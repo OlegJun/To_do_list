@@ -1,0 +1,63 @@
+.popup__calendar {
+  height: 100%;
+  padding: 0 15%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s;
+}
+
+.popup__calendar-container {
+  max-height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: aliceblue;
+  font-size: 1.3rem;
+  transition: all 0.5s;
+}
+
+.calendar__month-year {
+  margin: 10px 0 10px 0;
+}
+
+.contain__date {
+  width: 100%;
+  margin: 10px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar__control-buttons {
+  width: 100%;
+  margin: 10px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar__previous {
+  font-size: 1em;
+  flex-basis: 47.5%;
+}
+
+.calendar__next {
+  font-size: 1em;
+  flex-basis: 47.5%;
+}
+
+.calendar__select {
+  width: 100%;
+  margin: 10px 0 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.calendar__select-mouth {
+  flex-basis: 47.5%;
+}
+.calendar__select-year {
+  flex-basis: 47.5%;
+}

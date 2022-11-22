@@ -1,0 +1,9 @@
+.popup__calendar.disable {
+  max-height: 0;
+}
+.popup__calendar.disable .popup__calendar-container {
+  max-height: 0;
+  font-size: 0;
+}
+
+/*# sourceMappingURL=calendarDisable.css.map */

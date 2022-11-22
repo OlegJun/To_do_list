@@ -1,0 +1,14 @@
+.popup__window {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: none;
+}
+.popup__window.active {
+  display: flex;
+}
+
+/*# sourceMappingURL=popup.css.map */
